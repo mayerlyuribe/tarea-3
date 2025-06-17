@@ -1,0 +1,25 @@
+solo pseint: 
+
+Algoritmo ejercicio3
+	definir clientes, total Como Entero
+	definir compra Como Real
+	Definir nombre como cadena
+	
+	Escribir "cuántos clientes van a comprar?"
+	leer clientes
+	
+	mientras clientes > 0 Hacer
+		escribir "nombre del cliente: "
+		leer nombre
+		Escribir "cuánto es el total de su compra"
+		leer compra
+		
+		total <- compra - (compra * 15)/100
+		
+		Escribir "señor o señora: ", nombre
+		Escribir "el total a pagar, aplicando el descuento del 15% es: " total
+		Escribir "--------------------------"
+		
+		clientes <- clientes - 1
+	FinMientras
+FinAlgoritmo

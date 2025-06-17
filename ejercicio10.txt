@@ -1,0 +1,21 @@
+Algoritmo salariosN
+	definir salarioNuevo, salarioAnt, obreros, i, obrerosMas2 Como Entero
+	
+	obrerosMas2 <- 0
+	Escribir "cuántos obreros va a registrar: "
+	Leer obreros
+	
+	Para i <- 1 Hasta obreros
+		Escribir "obrero ", i
+		Escribir "de cuánto era su salario anterior?: "
+		Leer salarioAnt
+		salarioNuevo = salarioAnt + (salarioAnt* 0.25)
+		
+		Escribir "su nuevo salario es de: ", salarioNuevo
+		
+		si salarioNuevo > 2847000 Entonces
+			obrerosMas2 = obrerosMas2 + 1
+		FinSi
+	FinPara
+	Escribir "obrero que ganan más de dos salarios mínimos: ", obrerosMas2
+FinAlgoritmo

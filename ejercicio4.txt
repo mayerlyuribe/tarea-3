@@ -1,0 +1,91 @@
+Algoritmo ejercicio4
+	
+	Definir alumnos, i Como Entero
+	Definir not1, not2, not3, promedioNOTAS  Como Real
+	definir examFinal, trabFinal, NotaTotal Como Real
+	Definir sumaCalif, promedioGrup Como Real
+	Definir mayorCalificacion, menorCalificacion Como Real
+	Definir notaValida Como Logico
+	
+	Repetir
+		Escribir "cuántos alumnos se van a registrar?"
+		leer alumnos
+		si alumnos <= 0 Entonces
+			Escribir "deben registrarse al menos 1 alumno"
+		FinSi
+	Hasta Que alumnos > 0
+	
+	sumaCalif <- 0
+	mayorCalificacion <- -1
+    menorCalificacion <- 6
+	
+	para i <- 1 hasta alumnos Hacer
+		Escribir " alumno ", i
+		Repetir
+			Escribir "Ingrese la calificación del primer parcial: "
+            Leer not1
+            notaValida <- (not1 >= 0.0 Y not1 <= 5.0)
+            Si NO notaValida Entonces
+                Escribir "Error: La nota debe estar entre 0.0 y 5.0"
+            FinSi
+        Hasta Que notaValida
+		
+		Repetir
+			Escribir "Ingrese la calificación del segundo parcial: "
+            Leer not2
+            notaValida <- (not2 >= 0.0 Y not2 <= 5.0)
+            Si NO notaValida Entonces
+                Escribir "Error: La nota debe estar entre 0.0 y 5.0"
+            FinSi
+        Hasta Que notaValida
+		
+		Repetir
+			Escribir "Ingrese la calificación del tercer parcial: "
+            Leer not3
+            notaValida <- (not3 >= 0.0 Y not3 <= 5.0)
+            Si NO notaValida Entonces
+                Escribir "Error: La nota debe estar entre 0.0 y 5.0"
+            FinSi
+        Hasta Que notaValida
+		
+		Repetir
+			Escribir "ingrese la calificación del examen final: "
+			Leer examFinal
+			notaValida <- (examFinal >= 0.0 y examFinal <= 5.0)
+			si NO notaValida Entonces
+				Escribir "Error: La nota debe estar entre 0.0 y 5.0"
+			FinSi
+		Hasta Que notaValida
+		
+		Repetir
+			Escribir "ingrese la calificación del trabajo final: "
+			Leer trabFinal
+			notaValida <- (trabFinal >= 0.0 y trabFinal <= 5.0)
+			si NO notaValida Entonces
+				Escribir "Error: La nota debe estar entre 0.0 y 5.0"
+			FinSi
+		Hasta Que notaValida
+		
+		promedioNOTAS <- (not1 + not2 + not3)/3
+		NotaTotal <- (promedioNOTAS * 0.55) + (examFinal * 0.30) + (trabFinal * 0.15)
+		
+		Escribir "calificación final: ", NotaTotal
+		sumaCalif <- sumaCalif + NotaTotal
+		
+		si NotaTotal > mayorCalificacion Entonces
+			mayorCalificacion <- NotaTotal
+		FinSi
+		
+		si NotaTotal < menorCalificacion Entonces
+			menorCalificacion <- NotaTotal
+		FinSi
+		Escribir "-------------------------"
+	FinPara
+	promedioGrup <- sumaCalif / alumnos
+	
+	Escribir "numero total de alumnos: ", alumnos
+	Escribir "promedio del grupo: ", promedioGrup
+	Escribir "calificación más alta: ", mayorCalificacion
+	Escribir "calificación más baja: ", menorCalificacion
+	
+FinAlgoritmo

@@ -1,0 +1,14 @@
+Algoritmo OrdenarDosNumeros
+    Definir num1, num2 Como Real
+    Escribir "Ingrese el primer número: "
+    Leer num1
+    Escribir "Ingrese el segundo número: "
+    Leer num2
+	
+    Si num1 <= num2 Entonces
+        Escribir "Los números en orden ascendente son: ", num1, " - ", num2
+    Sino
+        Escribir "Los números en orden ascendente son: ", num2, " - ", num1
+    FinSi
+    
+FinAlgoritmo

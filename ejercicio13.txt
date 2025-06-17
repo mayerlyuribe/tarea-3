@@ -1,0 +1,36 @@
+Algoritmo inversion
+	definir persona1, persona2, persona3 como cadena
+	definir inv1, inv2, inv3, totalinv como entero
+	definir porc1, porc2, porc3 Como real
+	
+	
+	Escribir "nombre:"
+	leer persona1
+	Escribir "cuánto invirtió?: "
+	Leer inv1
+	
+	Escribir "nombre:"
+	leer persona2
+	Escribir "cuánto invirtió?: "
+	leer inv2
+	
+	Escribir "nombre:"
+	leer persona3
+	Escribir "cuánto invirtió?: "
+	leer inv3
+	
+	totalinv <- inv1 + inv2 + inv3
+	
+	porc1 <- (inv1/totalinv) * 100
+	porc1 <- redon(porc1 * 100)/100
+	
+	porc2 <- (inv2/totalinv) * 100
+	porc2 <- redon(porc2 * 100)/100
+	
+	porc3 <- (inv3/totalinv) * 100
+	porc3 <- redon(porc3 * 100)/100
+	
+	Escribir persona1, " invirtió el ", porc1,"%"
+	Escribir persona2, " invirtió el ", porc2,"%"
+	Escribir persona3, " invirtió el ", porc3,"%"
+FinAlgoritmo
