@@ -17,8 +17,20 @@ Además  se desea saber el promedio Generaldel grupo en la materia; y cual fue l
 
 ## ejercicio 5.
 Un maestro desea saber que porcentaje de hombres y que porcentaje de mujeres hay en un grupo de N estudiantes. Se debe validar que el género sea F o M.
+
 ## ejercicio 6.
 Realizar un diagrama que calcule la edad de N personas si nos dan la fecha de nacimiento y la fecha actual. Validando que la fecha actual no sea inferior a la fecha de nacimiento y que la edad ingresada este entre 1 y 99 años.
+
+## ejercicio 7.
+Dada una cantidad en pesos, obtener la equivalencia en dólares, asumiendo que la unidad cambiaria es un dato desconocido.
+
+## ejercicio 8.
+Hallar la masa si sabemos que la presión, el volumen y la temperatura de una masa de aire se relacionan por la formula:
+Masa= (presión* volumen) / (0.37*(temperatura+460))
+
+## ejercicio 9.
+Calcular el numero de pulsaciones que una persona debe tener por cada 10 segundos de ejercicio, si la formula es:
+Num.pulsaciones=(220-edad)/10
 
 ## ejercicio 10.
 Calcular el nuevo salario de N obreros si obtuvo un incremento del 25% sobre su salario anterior. Contar cuantos obreros ganan más de 2 salario mínimos. 

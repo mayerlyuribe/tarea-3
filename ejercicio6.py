@@ -1,6 +1,7 @@
 personas = int(input("cuántas personas va a registrar?: "))
 
 while personas > 0:
+
     print("ingrese la fecha de hoy:")
     año_hoy = int(input("año: "))
     mes_hoy = int(input("mes: "))
@@ -42,11 +43,10 @@ while personas > 0:
             dia = int(input("día: "))
         else:
             break
+
     print("--------------------------------------")
-    if mes < mes_hoy:
-        if dia < dia_hoy:
-            cumplido = True
-        elif dia == dia_hoy:
+    if mes <= mes_hoy:
+        if dia <= dia_hoy:
             cumplido = True
         else:
             cumplido = False
@@ -57,8 +57,10 @@ while personas > 0:
         edad = año_hoy - año
     elif cumplido == False:
         edad = (año_hoy - año) - 1
-
-    print("tu edad es:", edad)
+    if edad >= 99:
+        print("su edad está fuera de rango")
+    else:
+        print("tu edad es:", edad, "años")
     print("--------------------------------------")
 
     personas -= 1
